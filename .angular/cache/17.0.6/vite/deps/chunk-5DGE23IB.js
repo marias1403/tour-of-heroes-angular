@@ -3,17 +3,15 @@ import {
   Observable,
   Subject,
   Subscription,
+  __spreadProps,
+  __spreadValues,
   distinctUntilChanged,
   first,
   merge,
   of,
   share,
   switchMap
-} from "./chunk-W224PUNB.js";
-import {
-  __spreadProps,
-  __spreadValues
-} from "./chunk-4WX7ZCK5.js";
+} from "./chunk-V4QF72PL.js";
 
 // node_modules/@angular/core/fesm2022/primitives/signals.mjs
 function defaultEquals(a, b) {
@@ -20669,4 +20667,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-ZYS5EDIO.js.map
+//# sourceMappingURL=chunk-5DGE23IB.js.map
