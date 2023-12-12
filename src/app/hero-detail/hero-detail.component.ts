@@ -1,10 +1,10 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { HeroService } from '../hero.service';
-import {NgIf, UpperCasePipe} from '@angular/common';
-import {FormsModule} from '@angular/forms';
-import {Hero} from '../hero';
+import { NgIf, UpperCasePipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Hero } from '../hero';
 
 @Component({
   standalone: true,
@@ -34,5 +34,12 @@ export class HeroDetailComponent {
 
   goBack(): void {
     this.location.back();
+  }
+
+  save(): void {
+    if (this.hero) {
+      this.heroService.updateHero(this.hero)
+        .subscribe(() => this.goBack());
+    }
   }
 }
